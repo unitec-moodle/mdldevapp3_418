@@ -1,0 +1,56 @@
+
+language: php
+
+sudo: false
+
+cache:
+  directories:
+    - $HOME/.composer/cache
+
+addons:
+  postgresql: "9.4"
+
+services:
+  - mysql
+
+php:
+ - 7.2
+
+env:
+ matrix:
+  - DB=pgsql MOODLE_BRANCH=MOODLE_35_STABLE
+  - DB=pgsql MOODLE_BRANCH=MOODLE_36_STABLE
+  - DB=pgsql MOODLE_BRANCH=MOODLE_37_STABLE
+  - DB=pgsql MOODLE_BRANCH=MOODLE_38_STABLE
+  - DB=pgsql MOODLE_BRANCH=MOODLE_39_STABLE
+  - DB=pgsql MOODLE_BRANCH=master
+  - DB=mysqli MOODLE_BRANCH=MOODLE_35_STABLE
+  - DB=mysqli MOODLE_BRANCH=MOODLE_36_STABLE
+  - DB=mysqli MOODLE_BRANCH=MOODLE_37_STABLE
+  - DB=mysqli MOODLE_BRANCH=MOODLE_38_STABLE
+  - DB=mysqli MOODLE_BRANCH=MOODLE_39_STABLE
+  - DB=mysqli MOODLE_BRANCH=master
+
+matrix:
+  include:
+    - php: 7.4
+      env: DB=pgsql MOODLE_BRANCH=master
+    - php: 7.4
+      env: DB=mysqli MOODLE_BRANCH=master
+
+before_install:
+  - phpenv config-rm xdebug.ini
+  - cd ../..
+  - composer create-project -n --no-dev --prefer-dist moodlehq/moodle-plugin-ci ci ^3;
+  - export PATH="$(cd ci/bin; pwd):$(cd ci/vendor/bin; pwd):$PATH"
+
+install:
+  - moodle-plugin-ci install -vvv
+
+script:
+  - moodle-plugin-ci phplint
+  - moodle-plugin-ci phpcpd
+  # - moodle-plugin-ci phpmd
+  - moodle-plugin-ci codechecker
+  - moodle-plugin-ci phpunit
+  - moodle-plugin-ci behat      # No tests yet

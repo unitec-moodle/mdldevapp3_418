@@ -1,0 +1,65 @@
+.block_unitec_teacher_team .user_profile {
+    margin-bottom: 10px;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.block_unitec_teacher_team .user_profile:last-child {
+    margin-bottom: 0px;
+}
+
+.block_unitec_teacher_team .user_profile .user_picture {
+    float: left;
+    width: 100%;
+    padding: 10px 0px 0px 0px;
+    text-align: left;
+}
+
+.block_unitec_teacher_team .user_profile .user_picture .user_image {
+    object-fit: contain;
+    width: 100%;
+    max-width: 55px;
+    height:auto;
+    /*border-radius: 50%;*/
+}
+
+.block_unitec_teacher_team .user_profile .user_details {
+    float: left;
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+    text-align: left;
+    
+}
+
+.block_unitec_teacher_team .user_profile .user_details .detail {
+    margin: 0px 0px;
+    font-size: 0.9em;
+}
+
+.block_unitec_teacher_team .user_profile .user_details .detail.name {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.block_unitec_teacher_team .user_profile .user_details .detail:first-child {
+    margin-top: 5px;
+}
+
+.block_unitec_teacher_team .user_profile .user_details .detail:last-child {
+    margin-bottom: 15px;
+}
+
+.block_unitec_teacher_team .user_profile .user_details .detail.role,
+.block_unitec_teacher_team .user_profile .user_details .detail.cpf1 {
+    font-size: 1.15em;
+    color: #009ed7;
+    margin-bottom: 5px;
+}
+
+.block_unitec_teacher_team .user_profile .user_details .detail.email a {
+    color: #2f2f2f;
+}
+
+.hide_element {
+    Display: none;    
+}

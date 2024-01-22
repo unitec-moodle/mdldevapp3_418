@@ -1,0 +1,74 @@
+.block_carousel .card-body {
+    margin: 0px;
+    padding: 0px !important;
+}
+
+.block_carousel .card-body .card-text.content {
+    width: 80%;
+    margin: auto;
+}
+
+
+.block_carousel {
+    margin-bottom: 60px;
+}
+.block_carousel .slidewrap {
+    position: relative;
+    height: 0;
+    color: white;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.block_carousel .slidewrap .title {
+    position: absolute;
+    left: 2%;
+    top: 2%;
+    padding: 1em;
+    margin: 0;
+    text-shadow: 0px 2px 6px #000;
+}
+.block_carousel .slidewrap .title.multislide {
+    padding: 5px 0 0 5px;
+}
+
+.block_carousel .slidewrap .text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1em;
+    background: rgba(0,0,0,.4);
+}
+.block_carousel .slidewrap .text.multislide {
+    padding: 0 0 0 5px;
+}
+
+.block_carousel .slick-slide {
+    padding: 1em !important;
+}
+
+.block_carousel.modal.show .modal-dialog {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.block_carousel.modal.show .modal-body {
+    max-height: 450px;
+    overflow-y: auto;
+    font-size: 14px;
+}
+
+.slick-prev::before, .slick-next::before {
+    /*color: rgba(0,0,0,.4) !important;*/
+    color: #006666 !important;
+    font-size: 50px !important;
+}
+
+ul.slick-dots li button::before {
+    /*color: rgba(0,0,0,.4) !important;*/
+    color: #006666 !important;
+    font-size: 20px !important;
+}
+
