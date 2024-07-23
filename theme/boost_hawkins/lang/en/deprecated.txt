@@ -1,0 +1,4 @@
+totop,theme_boost_hawkins
+privacy:drawernavclosed,theme_boost_hawkins
+privacy:drawernavopen,theme_boost_hawkins
+currentinparentheses,theme_boost_hawkins
