@@ -1,4 +1,0 @@
-totop,theme_boost_var_01
-privacy:drawernavclosed,theme_boost_var_01
-privacy:drawernavopen,theme_boost_var_01
-currentinparentheses,theme_boost_var_01
