@@ -1,0 +1,4 @@
+totop,theme_boost_env_ani_sci
+privacy:drawernavclosed,theme_boost_env_ani_sci
+privacy:drawernavopen,theme_boost_env_ani_sci
+currentinparentheses,theme_boost_env_ani_sci
