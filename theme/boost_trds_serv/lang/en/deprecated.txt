@@ -1,4 +1,0 @@
-totop,theme_boost_trds_serv
-privacy:drawernavclosed,theme_boost_trds_serv
-privacy:drawernavopen,theme_boost_trds_serv
-currentinparentheses,theme_boost_trds_serv
