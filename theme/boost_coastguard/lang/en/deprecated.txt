@@ -1,4 +1,0 @@
-totop,theme_boost_coastguard
-privacy:drawernavclosed,theme_boost_coastguard
-privacy:drawernavopen,theme_boost_coastguard
-currentinparentheses,theme_boost_coastguard
